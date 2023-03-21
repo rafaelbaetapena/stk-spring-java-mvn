@@ -1,0 +1,1 @@
+# About mercado-zup-v2 stack
