@@ -1,11 +1,12 @@
-description: Templates, plugins e stackfiles para facilitar o comeco e evolucao de projetos com spring
-name: mercado-zup-v2
-display-name: mercado-zup-v2
+description: Templates, plugins e stackfiles para facilitar o comeco e evolucao de projetos com spring + java + maven
+name: stk-spring-java-mvn
+display-name: stk-spring-java-mvn
 picture: stack.png
 category: backend # Ref: https://docs.stackspot.com/docs/create-stacks/yaml-files/plugin/#category
 compatibility: # Put a list of technologies compatible with the stack
   - java
   - spring
+  - maven
 technologies: # Ref: https://docs.stackspot.com/docs/create-stacks/yaml-files/yaml/#technologies 
   - docker 
 about: docs/about.md

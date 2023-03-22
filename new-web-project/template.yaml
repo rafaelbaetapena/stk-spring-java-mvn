@@ -1,0 +1,31 @@
+name: new-web-project
+description: Estrutura base para novos projetos web com spring boot
+types:
+  - app-template
+inputs:
+  - label: Project name
+    type: text
+    name: project_name
+    default: project-name
+  - label: Spring version
+    type: text
+    name: spring_version
+    default: 3.0.4
+  - label: Version
+    type: text
+    name: version
+    default: 0.0.1-SNAPSHOT
+  - label: Group id
+    type: text
+    name: group_id
+  - label: Artifact id
+    type: text
+    name: artifact_id
+  - label: Description
+    type: text
+    name: description
+
+computedInputs:
+  "base_package": "{{inputs.group_id}}.{{inputs.artifact_id}}"
+  "path": "{{computed_inputs.base_package | replace('.','/')}}"
+  
